@@ -13,6 +13,10 @@ viper.addEventListener("click", () => {
     localStorage.setItem("contador", contador)
     shaman.innerHTML = `CONTINUE! Você já Clicou ${contador} vezes!`
 
+    if (contador === 1) {
+        shaman.innerHTML = `CONTINUE! Você já Clicou ${contador} vez!`
+    }
+
     if (contador === 10) {
         document.getElementById("cont").style.backgroundColor = "red"
     }
